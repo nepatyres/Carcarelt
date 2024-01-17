@@ -1,14 +1,31 @@
-import React from "react";
+import React, { useEffect, useState } from 'react';
 import './Services.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 function Services() {
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollY = window.scrollY;
+
+            if (scrollY > 250) {
+                setIsScrolled(true);
+            }
+        };
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return (
         <div className="services-main" id="scrollToHomeServices">
             <span className="services-span">Our services</span>
             <div className="services-container">
-                <div className="services-first-row col-6">
+                <div className={`services-first-row col-6 ${isScrolled ? 'services-first-row-scroll' : ''}`}>
                     <div className="flip-box first-flip-box">
                         <div className="flip-box-inner">
                             <div className="flip-box-front flip-box-front-first">
@@ -39,7 +56,7 @@ function Services() {
                         </div>
                     </div>
                 </div>
-                <div className="services-second-row col-6">
+                <div className={`services-second-row col-6 ${isScrolled ? 'services-second-row-scroll' : ''}`}>
                     <div className="flip-box">
                         <div className="flip-box-inner">
                             <div className="flip-box-front flip-box-front-third">

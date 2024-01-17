@@ -1,18 +1,35 @@
-import React from "react";
+import React, { useEffect, useState } from 'react';
 import './AboutUs.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 function AboutUs() {
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollY = window.scrollY;
+
+            if (scrollY > 1900) {
+                setIsScrolled(true);
+            }
+        };
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return (
         <div className="aboutus-main-container" id="scrollToHomeAboutUs">
             <div className="aboutus-main-subcontainer">
                 <div className="aboutus-main col-12 col-xl-7">
                     <span className="aboutus-span">About us</span>
-                    <p className="aboutus-p">At Carcarelt, we believe in the transformative power of precision detailing. Established with a passion for enhancing the beauty and longevity of vehicles, we have become a trusted name in the world of car care. Our commitment goes beyond the surface – it's about delivering an unparalleled experience to every vehicle that graces our studio.</p>
+                    <p className={`aboutus-p ${isScrolled ? 'aboutus-p-scrolled' : ''}`}>At Carcarelt, we believe in the transformative power of precision detailing. Established with a passion for enhancing the beauty and longevity of vehicles, we have become a trusted name in the world of car care. Our commitment goes beyond the surface – it's about delivering an unparalleled experience to every vehicle that graces our studio.</p>
                 </div>
                 <div className="aboutus-ourvalues col-10 col-xl-5">
                     <span className="aboutus-ourvalues-span">Our Values</span>
-                    <div className="aboutus-innovation-main">
+                    <div className={`aboutus-innovation-main ${isScrolled ? 'aboutus-innovation-main-scrolled' : ''}`}>
                         <div id="aboutus-innovation-svg-main">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" id="aboutus-innovation-svg">
                                 <path d="M24 0C10.767 0 0 10.767 0 24s10.767 24 24 24 24-10.767 24-24S37.233 0 24 0zm0 47C11.318 47 1 36.682 1 24S11.318 1 24 1s23 10.318 23 23-10.318 23-23 23z" />
@@ -24,7 +41,7 @@ function AboutUs() {
                             <p className="aboutus-innovation-p">Innovative techniques and a love for automotive excellence drive us to elevate your vehicle care.</p>
                         </div>
                     </div>
-                    <div className="aboutus-customer-main">
+                    <div className={`aboutus-customer-main ${isScrolled ? 'aboutus-customer-main-scrolled' : ''}`}>
                         <div id="aboutus-innovation-svg-main">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" id="aboutus-customer-svg">
                                 <path d="M24 0C10.767 0 0 10.767 0 24s10.767 24 24 24 24-10.767 24-24S37.233 0 24 0zm0 47C11.318 47 1 36.682 1 24S11.318 1 24 1s23 10.318 23 23-10.318 23-23 23z" /><circle cx="15.691" cy="23.5" r=".5" transform="rotate(-45.001 15.691 23.5)" />
@@ -36,7 +53,7 @@ function AboutUs() {
                             <p className="aboutus-customer-p">Personalized solutions, transparent service, and exceeding expectations are our commitment to you.</p>
                         </div>
                     </div>
-                    <div className="aboutus-precision-main">
+                    <div className={`aboutus-precision-main ${isScrolled ? 'aboutus-precision-main-scrolled' : ''}`}>
                         <div id="aboutus-innovation-svg-main">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" id="aboutus-precision-svg">
                                 <path d="M24 0C10.767 0 0 10.767 0 24s10.767 24 24 24 24-10.767 24-24S37.233 0 24 0zm0 47C11.318 47 1 36.682 1 24S11.318 1 24 1s23 10.318 23 23-10.318 23-23 23z" />

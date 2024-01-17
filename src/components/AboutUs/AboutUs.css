@@ -38,8 +38,26 @@
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    border-right: 2px solid rgba(255, 255, 255, 0.5);
     padding-right: 30px;
+    opacity: 0;
+}
+
+.aboutus-p-scrolled {
+    position: relative;
+    animation: p 1.5s ease forwards;
+}
+
+@keyframes p {
+    0% {
+        right: 120px;
+        opacity: 0;
+    }
+
+    100% {
+        right: 0px;
+        opacity: 1;
+        border-right: 2px solid rgba(255, 255, 255, 0.5);
+    }
 }
 
 .aboutus-innovation-main,
@@ -48,6 +66,58 @@
     display: flex;
     flex-direction: row;
     margin-top: 20px;
+    opacity: 0;
+}
+
+.aboutus-innovation-main-scrolled {
+    position: relative;
+    animation: innovation 1.5s ease forwards;
+}
+
+.aboutus-customer-main-scrolled {
+    position: relative;
+    animation: customer 1.5s ease forwards;
+}
+
+.aboutus-precision-main-scrolled {
+    position: relative;
+    animation: precision 1.5s ease forwards;
+}
+
+@keyframes innovation {
+    0% {
+        left: 60px;
+        opacity: 0;
+    }
+
+    100% {
+        left: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes customer {
+    0% {
+        left: 120px;
+        opacity: 0;
+    }
+
+    100% {
+        left: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes precision {
+    0% {
+        left: 180px;
+        opacity: 0;
+    }
+
+    100% {
+        left: 0px;
+        opacity: 1;
+    }
 }
 
 #aboutus-innovation-svg,

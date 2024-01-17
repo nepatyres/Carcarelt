@@ -31,14 +31,14 @@ function Price() {
             <div className="packages-main">
                 <div className="tutuaa">
                     <div className={`box-0 selected-3-box ${selectedItem === 3 ? 'selected-3-box-none' : ''}`}>
-                        <div className="package-circle"></div>
+                        <div className="package-circle package-circle-first"></div>
                         <div className="package-title">{`${selectedItem === 0 ? 'Basic' : selectedItem === 1 ? 'Basic' : selectedItem === 2 ? 'Basic' : ''}`}</div>
                         <div className="package-second-title">{`${selectedItem === 0 ? 'Dry Interior Cleaning' : selectedItem === 1 ? '1 Stage Polishing' : selectedItem === 2 ? 'Essential Protection Package' : ''}`}</div>
                         <div className="package-price">{selectedItem === 0 ? '€125' : selectedItem === 1 ? '€120' : selectedItem === 2 ? '€300' : ''}</div>
                         <div className="package-description">{selectedItem === 0 ? <TextVariants variant="interior1" /> : selectedItem === 1 ? <TextVariants variant="polishing1" /> : selectedItem === 2 ? <TextVariants variant="ppf1" /> : 'else'}</div>
                     </div>
                     <div className={`box-1 selected-3-box ${selectedItem === 3 ? 'selected-3-box-one' : ''}`}>
-                        <div className="package-circle"></div>
+                        <div className="package-circle package-circle-second"></div>
                         <div className="package-title">{`${selectedItem === 0 ? 'Standard' : selectedItem === 1 ? 'Standard' : selectedItem === 2 ? 'Standard' : 'Standard'}`}</div>
                         <div className="package-second-title">{`${selectedItem === 0 ? 'Wet Interior Cleaning' : selectedItem === 1 ? '2 Stage Polishing' : selectedItem === 2 ? 'Advanced Shield Package' : 'Wheel Repair Package'}`}</div>
                         <div className="package-price">{selectedItem === 0 ? '€170' : selectedItem === 1 ? '€180' : selectedItem === 2 ? '€600' : '€100'}</div>
