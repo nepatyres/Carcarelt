@@ -187,4 +187,17 @@
         border: none;
         padding-right: 0px;
     }
+
+    @keyframes p {
+        0% {
+            right: 120px;
+            opacity: 0;
+        }
+
+        100% {
+            right: 0px;
+            opacity: 1;
+            border-right: none;
+        }
+    }
 }
