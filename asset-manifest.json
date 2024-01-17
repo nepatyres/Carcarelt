@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "//github.io/Carcarelt/static/css/main.0e5522c7.css",
-    "main.js": "//github.io/Carcarelt/static/js/main.e9c6dba7.js",
-    "static/js/379.fe5364f8.chunk.js": "//github.io/Carcarelt/static/js/379.fe5364f8.chunk.js",
-    "static/js/787.ef1b07d5.chunk.js": "//github.io/Carcarelt/static/js/787.ef1b07d5.chunk.js",
+    "main.js": "//github.io/Carcarelt/static/js/main.528700ea.js",
+    "static/js/379.bc7294ce.chunk.js": "//github.io/Carcarelt/static/js/379.bc7294ce.chunk.js",
+    "static/js/787.826d2a55.chunk.js": "//github.io/Carcarelt/static/js/787.826d2a55.chunk.js",
     "static/media/carPolishing.png": "//github.io/Carcarelt/static/media/carPolishing.d844a9a37c6b3a5e5fcc.png",
     "static/media/ppf.png": "//github.io/Carcarelt/static/media/ppf.fd33f487bf565919eb41.png",
     "static/media/Ubuntu-Light.ttf": "//github.io/Carcarelt/static/media/Ubuntu-Light.0dd2d5986e2731a16ee7.ttf",
@@ -15,12 +15,12 @@
     "static/media/Gruppo-Regular.ttf": "//github.io/Carcarelt/static/media/Gruppo-Regular.6651b7e098ca04e57596.ttf",
     "index.html": "//github.io/Carcarelt/index.html",
     "main.0e5522c7.css.map": "//github.io/Carcarelt/static/css/main.0e5522c7.css.map",
-    "main.e9c6dba7.js.map": "//github.io/Carcarelt/static/js/main.e9c6dba7.js.map",
-    "379.fe5364f8.chunk.js.map": "//github.io/Carcarelt/static/js/379.fe5364f8.chunk.js.map",
-    "787.ef1b07d5.chunk.js.map": "//github.io/Carcarelt/static/js/787.ef1b07d5.chunk.js.map"
+    "main.528700ea.js.map": "//github.io/Carcarelt/static/js/main.528700ea.js.map",
+    "379.bc7294ce.chunk.js.map": "//github.io/Carcarelt/static/js/379.bc7294ce.chunk.js.map",
+    "787.826d2a55.chunk.js.map": "//github.io/Carcarelt/static/js/787.826d2a55.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0e5522c7.css",
-    "static/js/main.e9c6dba7.js"
+    "static/js/main.528700ea.js"
   ]
 }
