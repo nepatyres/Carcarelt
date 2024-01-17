@@ -1,0 +1,335 @@
+@font-face {
+    font-family: "Unitext Regular";
+    src: url("https://db.onlinewebfonts.com/t/8e38c9cc931e43e959d8341ad03741ab.eot");
+    src: url("https://db.onlinewebfonts.com/t/8e38c9cc931e43e959d8341ad03741ab.eot?#iefix")format("embedded-opentype"),
+        url("https://db.onlinewebfonts.com/t/8e38c9cc931e43e959d8341ad03741ab.woff2")format("woff2"),
+        url("https://db.onlinewebfonts.com/t/8e38c9cc931e43e959d8341ad03741ab.woff")format("woff"),
+        url("https://db.onlinewebfonts.com/t/8e38c9cc931e43e959d8341ad03741ab.ttf")format("truetype"),
+        url("https://db.onlinewebfonts.com/t/8e38c9cc931e43e959d8341ad03741ab.svg#Unitext Regular")format("svg");
+}
+
+@font-face {
+    font-family: 'Ubuntu-light';
+    src: url('../../assets/fonts/Ubuntu/Ubuntu-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../../assets/fonts/Ubuntu/Ubuntu-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Ubuntu-bold';
+    src: url('../../assets/fonts/Ubuntu/Ubuntu-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Gruppo';
+    src: url('../../assets/fonts/Gruppo/Gruppo-Regular.ttf') format('truetype');
+}
+
+.home-navbar-header-blur {
+    position: fixed;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    content: "";
+    top: 0;
+    backdrop-filter: blur(16px) saturate(.8);
+    background-color: rgba(0, 0, 0, .2);
+    height: 60px;
+}
+
+.navbar {
+    background-color: black;
+    position: fixed;
+    height: 600px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+}
+
+.home-nav-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(55%);
+    background-color: #1B1B1B;
+    opacity: 0.5;
+    background-image: url('../../assets/images/8.jpg');
+}
+
+.home-nav-bg-content-main {
+    color: rgba(255, 255, 255, 0.75);
+    position: inherit;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    align-items: center;
+}
+
+.home-nav-bg-content {
+    position: absolute;
+    animation: appear 1.5s ease forwards;
+}
+
+@keyframes appear {
+    0% {
+        bottom: -100px;
+        opacity: 0;
+    }
+
+    100% {
+        bottom: 20px;
+        opacity: 1;
+    }
+}
+
+.navbar h1 {
+    font-family: 'Gruppo', 'Ubuntu-bold';
+    font-size: 55px;
+    font-weight: 900;
+    transition: font-size 0.3s, line-height 0.3s, letter-spacing 0.3s;
+    color: white;
+    letter-spacing: 3px;
+    margin-bottom: 0px;
+}
+
+
+.navbar h2 {
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 28px;
+    text-wrap: wrap;
+    font-family: 'Gruppo', 'Ubuntu-bold', Verdana, sans-serif !important;
+    transition: font-size 0.3s, line-height 0.3s, letter-spacing 0.3s;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+.home-nav-bg-btn button {
+    font-family: 'Ubuntu-light';
+    font-weight: 100 !important;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 22px;
+    border: 1px solid rgba(193, 216, 240, 0.5);
+    background-color: transparent;
+    color: white;
+    padding: 5px 20px;
+    margin-left: 2px;
+    transition: background-color 2s ease;
+}
+
+.home-nav-bg-btn button:hover {
+    background-color: rgba(193, 216, 240, 0.1);
+    transition: background-color 2s ease;
+}
+
+.home-nav-main {
+    width: 100%;
+    --bs-gutter-x: 0rem !important;
+    padding-bottom: 5px;
+    position: fixed;
+    top: 0px;
+    z-index: 9999;
+}
+
+.container-fluid {
+    max-width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 !important;
+}
+
+.header-scroll {
+    transition: background-color 0.3s ease;
+}
+
+.home-navbar-brand {
+    display: flex !important;
+    padding: 0 !important;
+    align-items: center;
+    font-weight: 700;
+    font-family: "Unitext Regular", Geneva, Verdana, sans-serif !important;
+    font-size: 40px !important;
+    letter-spacing: 0.1px;
+    color: rgba(255, 255, 255, 0.8) !important;
+    user-select: none;
+}
+
+.nav-link {
+    color: white !important;
+    font-family: 'Gruppo', 'Ubuntu-light', sans-serif !important;
+    font-weight: 500 !important;
+    font-size: 20px !important;
+    letter-spacing: 1px !important;
+    transition: color .5s ease-in-out !important;
+    text-shadow: none !important;
+}
+
+.home-navbar-link:hover {
+    color: #c1d8f0 !important;
+}
+
+
+.nav-link-svg {
+    display: flex;
+    fill: rgba(255, 255, 255, 0.8) !important;
+    transition: fill .5s ease-in-out !important;
+}
+
+.nav-link-svg:hover {
+    fill: #c1d8f0 !important;
+}
+
+.navbar-collapse {
+    justify-content: center !important;
+    text-align: center !important;
+    align-items: center !important;
+}
+
+.home-navbar-toggler {
+    display: flex;
+    border: none !important;
+}
+
+.home-navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
+.home-nav-toggler-span {
+    stroke: rgba(255, 255, 255, 0.55);
+    transition: stroke .5s ease-in-out !important;
+}
+
+.navbar-collapse {
+    position: relative;
+    justify-content: left;
+}
+
+.nav-item {
+    margin-right: 10px;
+}
+
+.home-navbar-close-svg {
+    display: none;
+}
+
+.home-nav-contact-svg {
+    display: flex;
+    justify-content: right;
+}
+
+@media (max-width: 700px) {
+    .home-nav-background {
+        background-image: url('../../assets/images/8.jpg');
+    }
+
+    .home-nav-bg-content-main {
+        max-width: 90%;
+    }
+
+    .navbar h1 {
+        font-size: 31.8px !important;
+        font-weight: 800;
+        letter-spacing: 3px;
+        line-height: 40px;
+    }
+
+    .navbar h2 {
+        font-weight: 400;
+        font-size: 22px !important;
+    }
+
+    .home-nav-bg-btn button {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+}
+
+
+
+@media (max-width: 1200px) {
+    .navbar-brand {
+        margin-left: 15px;
+        z-index: 2;
+    }
+
+    .container-fluid {
+        display: flex;
+        justify-content: row;
+        max-width: 100%;
+    }
+
+    .navbar-collapse {
+        position: fixed;
+        top: 0px;
+        padding-top: 50px;
+        width: 100%;
+        backdrop-filter: blur(12px) saturate(.8);
+        background-color: rgba(0, 0, 0, .2);
+    }
+
+    .navbar-nav {
+        text-align: center;
+        align-items: center;
+    }
+
+    .home-navbar-toggler {
+        background-color: hsla(0, 0%, 100%, .08) !important;
+        border-radius: 15px !important;
+        z-index: 9999;
+        margin-right: 10px;
+    }
+
+    .home-nav-bg-content {
+        position: relative;
+        margin-top: 2%;
+    }
+
+    .navbar h1 {
+        font-size: 45px;
+        font-weight: 800;
+        letter-spacing: 3px;
+        line-height: 40px;
+    }
+
+    .navbar h2 {
+        font-weight: 400;
+        font-size: 25px;
+    }
+
+    .home-nav-contact {
+        display: block;
+    }
+
+    .home-nav-contact-svg {
+        display: none !important;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .navbar {
+        height: 100vh;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1200px) {
+    .home-nav-background {
+        background-image: url('../../assets/images/8.jpg');
+    }
+}

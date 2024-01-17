@@ -1,0 +1,50 @@
+.email-span {
+    font-family: 'Gruppo', 'Ubuntu', sans-serif !important;
+    font-size: 30px;
+    justify-content: center;
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.email-main {
+    font-family: 'Ubuntu-light';
+    color: white;
+}
+
+.email-btn button {
+    font-family: 'Ubuntu-light';
+    font-weight: 100 !important;
+    border-radius: 5px;
+    margin-top: 0px;
+    font-size: 20px;
+    border: 1px solid rgba(193, 216, 240, 0.8);
+    background-color: transparent;
+    color: white;
+    padding: 1px 8px;
+    margin-left: 2px;
+    transition: background-color 2s ease;
+}
+
+.email-btn button:hover {
+    background-color: rgba(193, 216, 240, 0.15);
+    transition: background-color 2s ease;
+}
+
+.email-input {
+    background-color: #000000;
+}
+
+.email-input:focus {
+    background-color: #000000;
+    color: white;
+}
+
+.email-input:not(:focus) {
+    background-color: #000000;
+    color: white;
+}
+
+.email-input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}

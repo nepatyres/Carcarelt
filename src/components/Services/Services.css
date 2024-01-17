@@ -1,0 +1,254 @@
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../../assets/fonts/Ubuntu/Ubuntu-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Gruppo';
+    src: url('../../assets/fonts/Gruppo/Gruppo-Regular.ttf') format('truetype');
+}
+
+.services-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000c10;
+    min-height: 100vh;
+}
+
+.services-span {
+    margin-top: 115px;
+    margin-bottom: 60px;
+    font-size: 40px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-family: 'Gruppo', 'Ubuntu', sans-serif !important;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+}
+
+
+.services-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
+    max-width: 80%;
+    margin-bottom: 50px;
+}
+
+.flip-box {
+    perspective: 1000px;
+    width: 160px;
+    height: 160px;
+    transition: all 500ms ease;
+    margin-bottom: 200px;
+    margin: 10px;
+    margin-bottom: 5px;
+}
+
+.flip-box-inner {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-box-front,
+.flip-box-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    border-radius: 20px;
+    border: 1px solid #02161d;
+    transform-style: preserve-3d;
+}
+
+.flip-box-front {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #3f3f3f;
+    font-family: 'Ubuntu-light';
+    color: rgba(255, 255, 255, 1);
+    text-wrap: wrap;
+    font-size: 20px;
+}
+
+.flip-box-back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #02161d;
+    font-family: 'Ubuntu-light';
+    color: white;
+    font-size: 15px;
+    transform: rotateY(180deg);
+}
+
+.flip-box-front-first,
+.flip-box-front-second,
+.flip-box-front-third,
+.flip-box-front-fourth {
+    background-size: cover;
+    background-position: center;
+}
+
+.flip-box-front-first::before,
+.flip-box-front-second::before,
+.flip-box-front-third::before,
+.flip-box-front-fourth::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.50);
+    border-radius: 20px;
+}
+
+.flip-box-front-first {
+    background-image: url('../../assets/images/carCleaning.png');
+}
+
+.flip-box-front-second {
+    background-image: url('../../assets/images/carPolishing.png');
+}
+
+.flip-box-front-third {
+    background-image: url('../../assets/images/ppf.png');
+}
+
+.flip-box-front-fourth {
+    background-image: url('../../assets/images/wheelsRestoration.png');
+}
+
+.flip-box-content {
+    transform-style: preserve-3d;
+    transform: translateZ(50px);
+    width: 80%;
+}
+
+.second-flip-box,
+.fourth-flip-box {
+    margin-top: 70px;
+}
+
+.services-second-row {
+    margin-top: 30px;
+}
+
+@media (min-width: 500px) {
+    .flip-box {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (min-width: 700px) {
+    .flip-box {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media (min-width: 1100px) {
+
+    .services-container {
+        flex-direction: row;
+        max-width: 90%;
+    }
+
+    .services-first-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .services-second-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 0px;
+    }
+
+    .flip-box {
+        width: 225px;
+        height: 225px;
+    }
+
+    .flip-box-back {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 992px) {
+    .services-span {
+        margin-top: 50px;
+    }
+
+    .services-container {
+        flex-direction: row;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 950px) {
+    .services-span {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 1214px) {
+    .flip-box {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media (min-width: 1300px) {
+    .flip-box {
+        width: 270px;
+        height: 270px;
+    }
+}
+
+@media (min-width: 1300px) {
+    .flip-box {
+        width: 280px;
+        height: 280px;
+    }
+}
+
+@media (max-width: 700px) {
+    .flip-box-back {
+        font-size: 13px;
+    }
+
+    .services-container {
+        max-width: 90%;
+    }
+}
+
+@media (min-width: 1800px) {
+    .flip-box {
+        width: 350px;
+        height: 350px;
+    }
+
+    .flip-box-front {
+        font-size: 25px;
+    }
+
+    .flip-box-back {
+        font-size: 18px;
+    }
+}

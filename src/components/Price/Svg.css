@@ -1,0 +1,19 @@
+.svg-variant1 {
+    width: 1.2rem;
+    height: 1.2rem;
+    fill: rgba(0, 128, 0, 0.3);
+    margin-right: 10px;
+}
+
+.svg-variant2 {
+    width: 0.7rem;
+    height: 0.7rem;
+    fill: rgba(255, 0, 0, 0.3);
+    margin-right: 15px;
+    margin-left: 3px;
+}
+
+.path-variant2 {
+    width: 0.3rem !important;
+    height: 0.3rem !important;
+}

@@ -1,0 +1,95 @@
+.cookies-con {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    z-index: 10;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.cookies-subcon {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-wrap: nowrap;
+}
+
+.cookies-p {
+    margin: 0px;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.8);
+    color: black;
+    font-family: 'Ubuntu-light';
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.cookies-btn {
+    font-family: 'Ubuntu-light';
+    font-weight: 100 !important;
+    border-radius: 5px;
+    font-size: 15px;
+    border: 1px solid rgba(193, 216, 240, 0.5);
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.8);
+    color: black;
+    padding: 5px 20px;
+    margin-right: 7px;
+    transition: background-color 2s ease;
+}
+
+.cookies-btn-main button:hover {
+    background-color: rgba(193, 216, 240, 0.4);
+    transition: background-color 2s ease;
+}
+
+@media (max-width: 1000px) {
+    .cookies-con {
+        padding-right: 5px;
+    }
+
+    .cookies-p {
+        font-size: 15px;
+        margin-right: 15px;
+    }
+
+    .cookies-subcon {
+        width: 100%;
+        flex-direction: column;
+        text-wrap: wrap;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .cookies-btn-main {
+        text-align: end;
+        align-items: center;
+        display: flex;
+    }
+
+    .cookies-btn {
+        margin: 0px;
+        margin-right: 5px;
+    }
+
+    .cookies-btn-second {
+        margin-right: 0px;
+    }
+}
+
+@media(width > 1200px) {
+    .cookies-subcon {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

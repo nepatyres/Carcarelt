@@ -1,0 +1,22 @@
+.find-main {
+    font-family: 'Ubuntu-light';
+    color: white;
+}
+
+.find-span {
+    font-family: 'Gruppo', 'Ubuntu', sans-serif !important;
+    font-size: 30px;
+    justify-content: center;
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.find-address {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    font-family: 'Ubuntu-light';
+    font-size: 20px;
+    justify-content: space-between;
+}

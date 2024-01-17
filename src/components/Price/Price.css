@@ -1,0 +1,493 @@
+/* @font-face {
+    font-family: 'Ubuntu-light';
+    src: url('../../assets/fonts/Ubuntu/Ubuntu-Light.ttf') format('truetype');
+}
+
+#scrollToHomePrice {
+    min-height: 100vh;
+}
+
+.price-main {
+    background-color: transparent;
+    color: black;
+    margin-bottom: 30px;
+}
+
+.price-span {
+    padding-top: 100px;
+    margin-bottom: 70px;
+    font-size: 40px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-family: 'Gruppo', 'Ubuntu', sans-serif !important;
+    text-transform: uppercase;
+    color: black;
+    text-align: center;
+}
+
+.price-container {
+    max-width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.price-ul {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    border: solid 1.9px #c1d8f0;
+    border-radius: 35px;
+    margin-bottom: 0px;
+    padding: 4px 4px;
+    background-color: white;
+    color: #02161d;
+}
+
+.price-li {
+    color: black;
+    text-decoration: none;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    border-radius: 25px;
+    height: 50px;
+    line-height: 17px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    list-style: none;
+    font-family: 'Ubuntu-light';
+}
+
+.price-li:focus {
+    color: blue;
+}
+
+.price-li-selected {
+    background-color: #02161d;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.price-li-selected:hover {
+    background-color: rgba(2, 22, 29, 0.9);
+    transition: background-color 0.3s ease;
+}
+
+.packages-main {
+    display: flex;
+    flex-direction: row;
+    max-width: 1160px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 500px;
+    gap: 10px;
+    margin-top: 25px;
+    margin-bottom: 125px;
+}
+
+.selected-3-box {
+    position: relative;
+    overflow: hidden;
+    border: 1.9px solid #c1d8f0;
+    background-color: white;
+    border-radius: 25px;
+    width: 100%;
+    height: 100%;
+    --tw-shadow: 0px 8px 48px #eee, 0px 4px 8px rgba(66, 71, 76, .06), 0px 0px 1px rgba(66, 71, 76, .48);
+    --tw-shadow-colored: 0px 8px 48px var(--tw-shadow-color), 0px 4px 8px var(--tw-shadow-color), 0px 0px 1px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.package-circle {
+    position: relative;
+    width: 100%;
+    height: 175px;
+    border-radius: 0 0 50% 50%;
+    border-top-right-radius: 25px;
+    overflow: hidden;
+    background-color: #02161d;
+    z-index: 1;
+}
+
+.package-title,
+.package-second-title,
+.package-price,
+.package-description {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+}
+
+.package-title {
+    color: rgba(255, 255, 255, 0.9);
+    font-family: 'Ubuntu-light';
+    font-weight: 700;
+    font-size: 25px;
+    top: 20px;
+}
+
+.package-second-title {
+    font-family: 'Ubuntu-light';
+    font-size: 20px;
+    font-weight: 100;
+    color: rgba(255, 255, 255, 0.5);
+    top: 60px;
+}
+
+.package-description {
+    text-align: start;
+    margin-top: 30px;
+}
+
+.package-price {
+    font-family: 'Ubuntu-light';
+    font-weight: 900;
+    font-size: 50px;
+    top: 90px;
+    color: rgba(255, 255, 255, 1);
+}
+
+
+.selected-3-box-none {
+    display: none;
+}
+
+.box-0,
+.box-2 {
+    margin-top: 10px;
+}
+
+.selected-3-box-one {
+    margin-left: auto;
+    margin-right: auto;
+    border: 1.9px solid #c1d8f0;
+    background-color: white;
+    border-radius: 25px;
+    width: 40%;
+    height: 100%;
+    --tw-shadow: 0px 8px 48px #eee, 0px 4px 8px rgba(66, 71, 76, .06), 0px 0px 1px rgba(66, 71, 76, .48);
+    --tw-shadow-colored: 0px 8px 48px var(--tw-shadow-color), 0px 4px 8px var(--tw-shadow-color), 0px 0px 1px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.selected-3-box-one .package-description {
+    text-align: start;
+    margin-top: 80px;
+}
+
+@media (max-width: 1100px) {
+
+    .price-li {
+        margin-right: 10px;
+    }
+
+    .packages-main {
+        max-width: 420px;
+        margin-left: auto;
+        margin-right: auto;
+        height: 1500px;
+        gap: 10px;
+        margin-top: 25px;
+        margin-bottom: 125px;
+    }
+}
+
+
+@media (max-width: 700px) {
+    .price-container {
+        max-width: 400px;
+        margin-top: 70px;
+        font-size: 13px;
+    }
+
+    .price-li {
+        margin-right: 10px;
+    }
+
+    .price-span {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .packages-main {
+        width: 380px;
+    }
+}
+
+@media screen and (max-height: 860px) {
+    #scrollToHomePrice {
+        margin-bottom: 50px !important;
+    }
+} */
+
+
+
+@font-face {
+    font-family: 'Ubuntu-light';
+    src: url('../../assets/fonts/Ubuntu/Ubuntu-Light.ttf') format('truetype');
+}
+
+#scrollToHomePrice {
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.price-main {
+    background-color: transparent;
+    color: black;
+    margin-bottom: 30px;
+}
+
+.price-span {
+    padding-top: 60px;
+    margin-bottom: 50px;
+    font-size: 40px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-family: 'Gruppo', 'Ubuntu', sans-serif !important;
+    text-transform: uppercase;
+    color: black;
+    text-align: center;
+}
+
+.price-container {
+    max-width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.price-ul {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    border: solid 1.9px #c1d8f0;
+    border-radius: 35px;
+    margin-bottom: 0px;
+    padding: 4px 4px;
+    background-color: white;
+    color: #02161d;
+}
+
+.price-li {
+    color: black;
+    text-decoration: none;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    border-radius: 25px;
+    height: 50px;
+    line-height: 17px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    list-style: none;
+    font-family: 'Ubuntu-light';
+}
+
+.price-li:focus {
+    color: blue;
+}
+
+.price-li-selected {
+    background-color: #02161d;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.price-li-selected:hover {
+    background-color: rgba(2, 22, 29, 0.9);
+    transition: background-color 0.3s ease;
+}
+
+.packages-main {
+    display: flex;
+    flex-direction: row;
+    width: 1160px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 500px;
+    gap: 10px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+.tutuaa {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 10px;
+}
+
+.selected-3-box {
+    position: relative;
+    overflow: hidden;
+    border: 1.9px solid #c1d8f0;
+    background-color: white;
+    border-radius: 25px;
+    width: 373px;
+    height: 500px;
+    --tw-shadow: 0px 8px 48px #eee, 0px 4px 8px rgba(66, 71, 76, .06), 0px 0px 1px rgba(66, 71, 76, .48);
+    --tw-shadow-colored: 0px 8px 48px var(--tw-shadow-color), 0px 4px 8px var(--tw-shadow-color), 0px 0px 1px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.package-circle {
+    position: relative;
+    width: 100%;
+    height: 175px;
+    border-radius: 0 0 50% 50%;
+    border-top-right-radius: 25px;
+    overflow: hidden;
+    background-color: #02161d;
+    z-index: 1;
+}
+
+.package-title,
+.package-second-title,
+.package-price,
+.package-description {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+}
+
+.package-title {
+    color: rgba(255, 255, 255, 0.9);
+    font-family: 'Ubuntu-light';
+    font-weight: 700;
+    font-size: 25px;
+    top: 20px;
+}
+
+.package-second-title {
+    font-family: 'Ubuntu-light';
+    font-size: 20px;
+    font-weight: 100;
+    color: rgba(255, 255, 255, 0.5);
+    top: 60px;
+}
+
+.package-description {
+    text-align: start;
+    margin-top: 30px;
+}
+
+.package-price {
+    font-family: 'Ubuntu-light';
+    font-weight: 900;
+    font-size: 50px;
+    top: 90px;
+    color: rgba(255, 255, 255, 1);
+}
+
+
+.selected-3-box-none {
+    display: none;
+}
+
+.box-0,
+.box-2 {
+    margin-top: 10px;
+}
+
+.selected-3-box-one {
+    width: 373px;
+    height: 500px;
+    border: 1.9px solid #c1d8f0;
+    background-color: white;
+    border-radius: 25px;
+    --tw-shadow: 0px 8px 48px #eee, 0px 4px 8px rgba(66, 71, 76, .06), 0px 0px 1px rgba(66, 71, 76, .48);
+    --tw-shadow-colored: 0px 8px 48px var(--tw-shadow-color), 0px 4px 8px var(--tw-shadow-color), 0px 0px 1px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.selected-3-box-one .package-description {
+    text-align: start;
+    margin-top: 80px;
+}
+
+@media (max-width: 1200px) {
+
+    .price-span {
+        padding-top: 50px;
+        margin-bottom: 15px;
+    }
+
+    .price-container {
+        margin-top: 15px;
+    }
+
+    .price-li {
+        margin-right: 10px;
+    }
+
+    .packages-main {
+        flex-direction: row !important;
+        width: 100%;
+        height: auto;
+        overflow-x: auto;
+        margin: 0;
+        white-space: nowrap;
+        left: 50%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .tutuaa {
+        flex-direction: row;
+        display: flex;
+    }
+
+    .packages-main::-webkit-scrollbar-track {
+        background-color: transparent;
+        height: 4px;
+    }
+
+    .packages-main::-webkit-scrollbar-thumb {
+        background-color: #02161d;
+        border-radius: 15px;
+    }
+
+    .packages-main::-webkit-scrollbar {
+        height: 12px !important;
+    }
+
+    .selected-3-box {
+        width: 373px;
+        height: 500px;
+        margin-bottom: 20px;
+    }
+}
+
+
+@media (max-width: 700px) {
+    .price-container {
+        font-size: 13px;
+    }
+
+    .price-li {
+        margin-right: 7px;
+    }
+
+    .price-li-last {
+        margin-right: 0px;
+    }
+
+    .price-span {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-height: 860px) {
+    #scrollToHomePrice {
+        margin-bottom: 50px !important;
+    }
+}

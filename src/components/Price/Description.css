@@ -1,0 +1,18 @@
+.text-variant-li {
+    display: flex;
+    margin-bottom: 5px;
+    font-size: 18px;
+    border-top: rgba(0, 0, 0, 0.08) solid 1px;
+    font-family: 'Ubuntu-light';
+}
+
+
+.text-variant-ul {
+    padding-left: 15%;
+    padding-right: 52px;
+    font-family: 'Ubuntu-light';
+}
+
+.text-variant-svg {
+    margin-right: 15px;
+}
