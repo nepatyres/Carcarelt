@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Carcarelt/static/css/main.07a2c7f5.css",
-    "main.js": "/Carcarelt/static/js/main.dbd96a8e.js",
+    "main.js": "/Carcarelt/static/js/main.306b952a.js",
     "static/js/379.edbfa46f.chunk.js": "/Carcarelt/static/js/379.edbfa46f.chunk.js",
     "static/js/787.b84fe6ff.chunk.js": "/Carcarelt/static/js/787.b84fe6ff.chunk.js",
     "static/media/carPolishing.png": "/Carcarelt/static/media/carPolishing.d844a9a37c6b3a5e5fcc.png",
@@ -15,12 +15,12 @@
     "static/media/Gruppo-Regular.ttf": "/Carcarelt/static/media/Gruppo-Regular.6651b7e098ca04e57596.ttf",
     "index.html": "/Carcarelt/index.html",
     "main.07a2c7f5.css.map": "/Carcarelt/static/css/main.07a2c7f5.css.map",
-    "main.dbd96a8e.js.map": "/Carcarelt/static/js/main.dbd96a8e.js.map",
+    "main.306b952a.js.map": "/Carcarelt/static/js/main.306b952a.js.map",
     "379.edbfa46f.chunk.js.map": "/Carcarelt/static/js/379.edbfa46f.chunk.js.map",
     "787.b84fe6ff.chunk.js.map": "/Carcarelt/static/js/787.b84fe6ff.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.07a2c7f5.css",
-    "static/js/main.dbd96a8e.js"
+    "static/js/main.306b952a.js"
   ]
 }
