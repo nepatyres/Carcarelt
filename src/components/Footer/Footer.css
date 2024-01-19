@@ -21,7 +21,6 @@
     padding-bottom: 3px;
     padding-top: 40px;
     bottom: 0;
-    color: rgba(255, 255, 255, 0.7);
     left: 0;
     width: 100%;
     text-align: center;
@@ -29,6 +28,22 @@
     align-items: center;
     margin: 0px;
     z-index: 3;
+}
+
+.footer-tag-first {
+    color: rgba(255, 255, 255, 0.7);
+    font-family: 'Ubuntu-light';
+}
+
+.footer-tag-second {
+    color: rgb(113 113 122);
+    font-family: 'Ubuntu-light';
+}
+
+.footer-tag-a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-family: 'Ubuntu-light';
 }
 
 @media(max-width: 1200px) {

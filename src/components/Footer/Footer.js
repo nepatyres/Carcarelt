@@ -23,7 +23,11 @@ function Footer() {
                     <Email />
                 </div>
             </div>
-            <div className='footer-tag'>© 2024 Carcarelt</div>
+            <div className='footer-tag'>
+                <span className='footer-tag-first'>Designed and developed by <a className='footer-tag-a' target='_blank' rel="noreferrer" href='https://julijus.com'>Julijus</a></span>
+                <br />
+                <span className='footer-tag-second'>© 2024 All rights reserved</span>
+            </div>
             <Cookies />
         </div>
     )
