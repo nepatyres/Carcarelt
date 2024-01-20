@@ -54,6 +54,7 @@
     cursor: pointer;
     list-style: none;
     font-family: 'Ubuntu-light';
+    transition: background-color 0.3s ease;
 }
 
 .price-li:focus {
@@ -63,7 +64,6 @@
 .price-li-selected {
     background-color: #02161d;
     color: white;
-    transition: background-color 0.3s ease;
 }
 
 .price-li-selected:hover {
@@ -261,7 +261,7 @@
     }
 }
 
-@media screen and (max-height: 860px) {
+@media screen and (max-height:860px) {
     #scrollToHomePrice {
         margin-bottom: 50px !important;
     }

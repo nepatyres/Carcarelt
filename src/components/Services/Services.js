@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import './Services.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 function Services() {
     const [isScrolled, setIsScrolled] = useState(false);

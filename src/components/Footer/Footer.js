@@ -1,7 +1,5 @@
 import React, { lazy, Suspense } from 'react';
 import './Footer.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import Find from './Find';
 import Email from './Email';
 import Call from './Call';

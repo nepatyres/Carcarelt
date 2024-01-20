@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import './Header.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function Header() {
     const [scrolling, setScrolling] = useState(false);

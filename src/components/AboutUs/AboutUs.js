@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './AboutUs.css'
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+
 function AboutUs() {
     const [isScrolled, setIsScrolled] = useState(false);
 

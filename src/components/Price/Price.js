@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import './Price.css';
-import TextVariants from './Description.js'
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import TextVariants from './Description.js';
 
 function Price() {
     const [selectedItem, setSelectedItem] = useState(null);

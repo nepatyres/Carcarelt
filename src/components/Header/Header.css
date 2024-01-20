@@ -79,6 +79,7 @@
 .home-nav-bg-content {
     position: absolute;
     animation: appear 1.5s ease forwards;
+    transform: translateY(0);
 }
 
 @keyframes appear {

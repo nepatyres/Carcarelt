@@ -1,6 +1,5 @@
 import React from 'react';
-
-import '../styles/Home.css'
+import './Home.css'
 import Header from '../components/Header/Header';
 import Services from '../components/Services/Services';
 import Price from '../components/Price/Price';
