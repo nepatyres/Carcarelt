@@ -9,7 +9,7 @@ function AboutUs() {
         const handleScroll = () => {
             const scrollY = window.scrollY;
 
-            if (scrollY > 1900) {
+            if (scrollY > 2100) {
                 setIsScrolled(true);
             }
         };

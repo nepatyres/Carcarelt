@@ -152,7 +152,7 @@
 }
 
 .services-first-row-scroll {
-    animation: left 1.2s ease forwards;
+    animation: left 1.5s ease forwards;
     position: relative;
     opacity: 0;
 }
@@ -160,7 +160,7 @@
 .services-second-row-scroll {
     opacity: 0;
     position: relative;
-    animation: right 1.2s ease forwards;
+    animation: right 2s ease forwards;
 }
 
 @keyframes left {
@@ -188,6 +188,12 @@
         left: 0px;
         bottom: 0px;
         opacity: 1;
+    }
+}
+
+@media (width < 500px) {
+    .flip-box-back {
+        font-size: 12px !important;
     }
 }
 

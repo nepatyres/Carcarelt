@@ -10,7 +10,7 @@ function Services() {
         const handleScroll = () => {
             const scrollY = window.scrollY;
 
-            if (scrollY > 250) {
+            if (scrollY > 370) {
                 setIsScrolled(true);
             }
         };

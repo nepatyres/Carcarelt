@@ -20,3 +20,10 @@
     font-size: 20px;
     justify-content: space-between;
 }
+
+@media(width < 900px) {
+    .find-address {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
