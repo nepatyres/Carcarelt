@@ -1,13 +1,3 @@
-@font-face {
-    font-family: 'Ubuntu';
-    src: url('../../assets/fonts/Ubuntu/Ubuntu-Light.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Gruppo';
-    src: url('../../assets/fonts/Gruppo/Gruppo-Regular.ttf') format('truetype');
-}
-
 .services-main {
     display: flex;
     flex-direction: column;

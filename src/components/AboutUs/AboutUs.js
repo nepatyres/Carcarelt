@@ -8,8 +8,11 @@ function AboutUs() {
     useEffect(() => {
         const handleScroll = () => {
             const scrollY = window.scrollY;
+            const screenWidth = window.innerWidth;
 
-            if (scrollY > 2100) {
+            if (screenWidth > 1200 && scrollY > 2100) {
+                setIsScrolled(true);
+            } else if (screenWidth < 1200 && scrollY > 1900) {
                 setIsScrolled(true);
             }
         };

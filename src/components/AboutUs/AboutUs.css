@@ -71,17 +71,17 @@
 
 .aboutus-innovation-main-scrolled {
     position: relative;
-    animation: innovation 1.5s ease forwards;
+    animation: innovation 2s ease forwards;
 }
 
 .aboutus-customer-main-scrolled {
     position: relative;
-    animation: customer 1.5s ease forwards;
+    animation: customer 2s ease forwards;
 }
 
 .aboutus-precision-main-scrolled {
     position: relative;
-    animation: precision 1.5s ease forwards;
+    animation: precision 2s ease forwards;
 }
 
 @keyframes innovation {
