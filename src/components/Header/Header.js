@@ -80,7 +80,7 @@ function Header() {
                 </div>
                 <div className='home-nav-main'>
                     <div className={`container-fluid ${scrolling ? 'header-scroll' : ''}`}>
-                        <a className='navbar-brand home-navbar-brand' href="/Carcarelt">CARCARELT</a>
+                        <a className='navbar-brand home-navbar-brand' href="/Carcarelt/">CARCARELT</a>
                         <button id='toggler' className="navbar-toggler home-navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                             <svg xmlns="http://www.w3.org/2000/svg" className='home-nav-toggler-span' width="27" height="27" viewBox="0 0 23 16">
                                 <g className='home-nav-toggler-svg' fillRule="evenodd" strokeLinecap="round" strokeWidth="1.6">
