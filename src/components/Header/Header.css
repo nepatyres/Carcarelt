@@ -327,6 +327,10 @@
     .navbar {
         height: 100vh;
     }
+
+    .home-nav-bg-content-main {
+        padding-top: 8%;
+    }
 }
 
 @media (min-width: 700px) and (max-width: 1200px) {
