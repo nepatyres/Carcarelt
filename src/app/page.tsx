@@ -25,10 +25,10 @@ export default function Home() {
   return (
     <main>
       <Header />
-      {/* <Services />
+      <Services />
       <Prices />
       <AboutUs />
-      <Footer /> */}
+      <Footer />
     </main>
   );
 }

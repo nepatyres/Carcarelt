@@ -43,6 +43,7 @@ export default function Header() {
                 layout="fill"
                 objectFit="cover"
                 className="brightness-[35%]"
+                loading="eager"
             />
             <div className='intro bottom-[35%] xl:bottom-[0] absolute inset-0 flex flex-col items-center justify-center'>
                 <h1 className="font-gruppo text-[32px] lg:text-[55px] font-extrabold text-white tracking-wider mb-0">Aesthetic Detail Studio</h1>
