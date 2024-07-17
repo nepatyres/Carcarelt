@@ -36,7 +36,7 @@ export default function Header() {
     };
 
     return (
-        <div className="w-full h-[600px] xl:h-screen overflow-hidden">
+        <div className="relative w-full h-[600px] xl:h-screen overflow-hidden">
             <Image
                 src="/images/intro.jpg"
                 alt="Intro Image"
@@ -44,13 +44,13 @@ export default function Header() {
                 objectFit="cover"
                 className="brightness-[35%]"
             />
-            {/* <div className='intro bottom-[35%] xl:bottom-[0] absolute inset-0 flex flex-col items-center justify-center'>
+            <div className='intro bottom-[35%] xl:bottom-[0] absolute inset-0 flex flex-col items-center justify-center'>
                 <h1 className="font-gruppo text-[32px] lg:text-[55px] font-extrabold text-white tracking-wider mb-0">Aesthetic Detail Studio</h1>
                 <h2 className="lg:mt-[-15px] font-light text-[22px] lg:text-[28px] text-white/70 flex-wrap font-gruppo text-center mb-[20px]">We have everything for your car&apos;s beauty.</h2>
                 <a onClick={() => scrollTo('scrollToFooter')} className="font-ubuntuL cursor-pointer font-thin rounded-[5px] mt-3 lg:mt-5 text-[18px] xl:text-[22px] border border-[#c1d8f080] bg-transparent text-white py-[2.5px] px-[10px] lg:py-[5px] lg:px-[20px] transition-colors duration-500 hover:bg-[#c1d8f01a]">
                     Book an appointment
                 </a>
-            </div> */}
+            </div>
             <nav className={`fixed left-0 w-full top-0 h-[60px] z-50 ${scrolling ? 'backdrop-blur-md bg-black/20' : ''}`} id="nav-blur">
                 <div className="w-[90%] lg:max-w-[80%] grid grid-cols-[1fr_1fr] lg:grid-cols-[1fr_2fr_1fr] m-auto">
                     <a className='flex p-0 items-center font-bold text-[40px] text-white/80 select-none font-ubuntu drop-shadow-md' href="/">CARCARELT</a>
