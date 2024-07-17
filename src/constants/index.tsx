@@ -8,12 +8,12 @@ export const scrollNav = [{ function: 'scrollToServices', onClick: 'scrollToServ
 export const services = [
     {
         front: 'Interior Detailing',
-        back: "A meticulous cleaning and restoration process for a vehicle's inside surfaces, enhancing cleanliness and appearance.",
+        back: "A meticulous cleaning and restoration process for a vehicle&apos;s inside surfaces, enhancing cleanliness and appearance.",
         url: '/images/carCleaning.png'
     },
     {
         front: 'Car Polishing',
-        back: "A process of smoothing and restoring a vehicle's paint surface, removing imperfections like swirl marks and scratches.",
+        back: "A process of smoothing and restoring a vehicle&apos;s paint surface, removing imperfections like swirl marks and scratches.",
         url: '/images/carPolishing.png'
     },
     {
@@ -23,7 +23,7 @@ export const services = [
     },
     {
         front: 'Wheel Repair',
-        back: "Car wheel repair involves fixing damages to a vehicle's wheels, such as scratches, dents, or curb rash.",
+        back: "Car wheel repair involves fixing damages to a vehicle&apos;s wheels, such as scratches, dents, or curb rash.",
         url: '/images/wheelsRestoration.png'
     }
 ];
