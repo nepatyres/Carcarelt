@@ -4,12 +4,7 @@
 
 @font-face {
   font-family: "Unitext Regular";
-  src: url("https://db.onlinewebfonts.com/t/8e38c9cc931e43e959d8341ad03741ab.eot");
-  src: url("https://db.onlinewebfonts.com/t/8e38c9cc931e43e959d8341ad03741ab.eot?#iefix")format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/8e38c9cc931e43e959d8341ad03741ab.woff2")format("woff2"),
-    url("https://db.onlinewebfonts.com/t/8e38c9cc931e43e959d8341ad03741ab.woff")format("woff"),
-    url("https://db.onlinewebfonts.com/t/8e38c9cc931e43e959d8341ad03741ab.ttf")format("truetype"),
-    url("https://db.onlinewebfonts.com/t/8e38c9cc931e43e959d8341ad03741ab.svg#Unitext Regular")format("svg");
+  src: url("https://db.onlinewebfonts.com/t/8e38c9cc931e43e959d8341ad03741ab.ttf")format("truetype")
 }
 
 @font-face {
@@ -35,11 +30,6 @@
 
 .flip:hover .inner {
   transform: rotateY(180deg);
-}
-
-.home-navbar-header-blur {
-  backdrop-filter: blur(16px);
-  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .packages-main {
