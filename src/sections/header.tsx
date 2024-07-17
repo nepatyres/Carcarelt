@@ -42,7 +42,7 @@ export default function Header() {
                 alt="Intro Image"
                 sizes='100vw'
                 fill
-                objectFit="cover"
+                objectFit="object-cover"
                 className="brightness-[35%]"
                 loading="eager"
             />
