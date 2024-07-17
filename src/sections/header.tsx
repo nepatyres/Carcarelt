@@ -37,8 +37,16 @@ export default function Header() {
 
     return (
         <div className="relative w-full h-[600px] xl:h-screen overflow-hidden">
-            <img src="images/intro.jpg" className="w-full object-cover h-full object-center brightness-[35%]" alt="" />
-            <div className='intro bottom-[35%] xl:bottom-[0] absolute inset-0 flex flex-col items-center justify-center'>
+            <Image
+                src="/images/intro.jpg"
+                alt="Intro Image"
+                sizes='100vw'
+                fill
+                objectFit="cover"
+                className="brightness-[35%]"
+                loading="eager"
+            />
+            <div className='intro bottom-[15%] xl:bottom-[5%] absolute inset-0 flex flex-col items-center justify-center'>
                 <h1 className="font-gruppo text-[32px] lg:text-[55px] font-extrabold text-white tracking-wider mb-0">Aesthetic Detail Studio</h1>
                 <h2 className="lg:mt-[-15px] font-light text-[22px] lg:text-[28px] text-white/70 flex-wrap font-gruppo text-center mb-[20px]">We have everything for your car&apos;s beauty.</h2>
                 <a onClick={() => scrollTo('scrollToFooter')} className="font-ubuntuL cursor-pointer font-thin rounded-[5px] mt-3 lg:mt-5 text-[18px] xl:text-[22px] border border-[#c1d8f080] bg-transparent text-white py-[2.5px] px-[10px] lg:py-[5px] lg:px-[20px] transition-colors duration-500 hover:bg-[#c1d8f01a]">
