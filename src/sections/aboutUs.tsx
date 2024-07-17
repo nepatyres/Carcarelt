@@ -43,7 +43,7 @@ function AboutUs() {
                 <div className="aboutus-ourvalues xl:pl-[30px] xl:col-span-5 col-span-12 xl:pb-[50px]">
                     <span className="flex justify-center text-[40px] font-semibold font-gruppo uppercase text-white/80 pt-20 xl:pb-[30px]">Our Values</span>
                     {aboutUs.map((about, i) => (
-                        <div key={i} ref={el => refs.current[i] = el} className='flex flex-row mt-3 items-center'>
+                        <div key={i} ref={el => { refs.current[i] = el }} className='flex flex-row mt-3 items-center'>
                             <div>
                                 {about.svg}
                             </div>

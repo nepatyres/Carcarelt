@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { navbar } from '@/constants';
 import { phoneSvg, togglerSvg } from '@/components/svg';
+import Image from 'next/image'
 
 export default function Header() {
     const [navbarVisible, setNavbarVisible] = useState(false);
@@ -12,21 +13,16 @@ export default function Header() {
         };
 
         window.addEventListener('scroll', handleScroll);
-
-        // Clean up event listener on component unmount or when navbarVisible changes
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, [navbarVisible]);
 
     const toggleNavbar = () => {
-        // Toggle navbarVisible using the state updater function form
         setNavbarVisible(prevNavbarVisible => !prevNavbarVisible);
     };
 
-    // Effect to handle immediate update of scrolling state after navbarVisible changes
     useEffect(() => {
-        // Immediately handle scroll to update scrolling state
         setScrolling(window.scrollY > 0 || navbarVisible);
     }, [navbarVisible]);
 
@@ -41,7 +37,7 @@ export default function Header() {
 
     return (
         <div className="w-full h-[600px] xl:h-screen overflow-hidden">
-            <img src="images/intro.jpg" className="w-full object-cover h-full object-center brightness-[35%]" alt="" />
+            <Image src="images/intro.jpg" className="w-full object-cover h-full object-center brightness-[35%]" width={500} height={300} alt="" priority />
             <div className='intro bottom-[35%] xl:bottom-[0] absolute inset-0 flex flex-col items-center justify-center'>
                 <h1 className="font-gruppo text-[32px] lg:text-[55px] font-extrabold text-white tracking-wider mb-0">Aesthetic Detail Studio</h1>
                 <h2 className="lg:mt-[-15px] font-light text-[22px] lg:text-[28px] text-white/70 flex-wrap font-gruppo text-center mb-[20px]">We have everything for your car's beauty.</h2>
