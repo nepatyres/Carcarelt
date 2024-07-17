@@ -4,12 +4,14 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import { services } from '@/constants';
 
 export default function Services() {
-    const refs = useRef(services.map(() => ({ box: null })))
+    const refs = useRef<Array<{ box: HTMLDivElement | null }>>(services.map(() => ({ box: null })));
 
     useLayoutEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
 
-        refs.current.forEach((box, i) => {
+        refs.current.forEach((item, i) => {
+            const { box } = item;
+
             if (box) {
                 const boxTimeline = gsap.timeline({
                     scrollTrigger: {
@@ -41,7 +43,7 @@ export default function Services() {
                     {services.map((service, i) => (
                         <div
                             key={i}
-                            ref={el => refs.current[i] = el}
+                            ref={el => {refs.current[i].box = el}}
                             className={`flip w-[250px] h-[250px] sm:w-[230px] sm:h-[230px] md:w-[300px] md:h-[300px] lg:w-[300px] lg:h-[300px] 2xl:w-[330px] 2xl:h-[330px] mb-[5px] transition-all ease-in duration-500 mr-5 ${i === 1 || i === 3 ? 'ml-[55px] sm:ml-[0px] sm:mt-[30px] xl:mt-[70px]' : ''}`}
                             style={{ perspective: '1000px' }}
                         >

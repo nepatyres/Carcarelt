@@ -2,6 +2,15 @@ import React, { useState, useEffect } from "react";
 import { lists, plans, prices } from '@/constants';
 import { checkMark, crossSign } from "@/components/svg";
 
+interface PriceData {
+  description: string[];
+  [key: number]: {
+    name: string;
+    price: string;
+    check: number;
+  };
+}
+
 function Prices() {
     const [selectedItem, setSelectedItem] = useState<number | null>(null);
 
@@ -13,6 +22,8 @@ function Prices() {
         setSelectedItem(index);
     };
 
+    const selectedItemIndex = selectedItem === null ? 0 : selectedItem;
+    const selectedPrice = prices[selectedItemIndex] as PriceData;
 
     return (
         <div id="scrollToPrices" className="min-h-screen overflow-hidden">
@@ -32,12 +43,12 @@ function Prices() {
                         <div key={i} className={`${i !== 1 ? 'mt-2.5' : ''} ${selectedItem === 3 && i == 0 || selectedItem === 3 && i == 2 ? 'hidden' : ''} relative overflow-hidden border-[1.8px] border-[#c1d8f0] bg-white rounded-[25px] w-[373px] h-[500px] mb-5 lg:mb-0`}>
                             <div className={`relative w-full h-[175px] overflow-hidden rounded-b-[50%] rounded-tr-[25px] ${i === 0 ? 'bg-[#a5a5a5]' : i === 1 ? 'bg-[#545E61]' : 'bg-[#02161d]'}`}></div>
                             <div className="absolute w-full text-center z-10 text-white/90 font-ubuntuL font-semibold text-[25px] top-[20px]">{plan}</div>
-                            <div className="absolute w-full text-center z-10 font-ubuntuL text-[20px] font-thin text-white/50 top-[60px]">{prices[`${selectedItem === 0 ? 0 : selectedItem === 1 ? 1 : selectedItem === 2 ? 2 : 3}`][i].name}</div>
-                            <div className="absolute w-full text-center z-10 font-ubuntuL font-extrabold text-[50px] top-[90px] text-white">{prices[`${selectedItem === 0 ? 0 : selectedItem === 1 ? 1 : selectedItem === 2 ? 2 : 3}`][i].price}</div>
+                            <div className="absolute w-full text-center z-10 font-ubuntuL text-[20px] font-thin text-white/50 top-[60px]">{selectedPrice[i].name}</div>
+                            <div className="absolute w-full text-center z-10 font-ubuntuL font-extrabold text-[50px] top-[90px] text-white">{selectedPrice[i].price}</div>
                             <div className="absolute w-full text-start mt-2.5 z-10">
                                 <ul className="pl-[15%] pr-[52px] font-ubuntuL">
-                                    {prices[`${selectedItem === 0 ? 0 : selectedItem === 1 ? 1 : selectedItem === 2 ? 2 : 3}`].description.map((des, j) => (
-                                        <li key={j} className="flex items-center font-ubuntuL mb-[5px] text-[18px] border-t border-t-black/[0.08]">{prices[`${selectedItem === 0 ? 0 : selectedItem === 1 ? 1 : selectedItem === 2 ? 2 : 3}`][i].check > j ? checkMark : crossSign}{des}</li>
+                                    {selectedPrice.description.map((des, j) => (
+                                        <li key={j} className="flex items-center font-ubuntuL mb-[5px] text-[18px] border-t border-t-black/[0.08]">{selectedPrice[i].check > j ? checkMark : crossSign}{des}</li>
                                     ))}
                                 </ul>
                             </div>
