@@ -38,7 +38,7 @@ function AboutUs() {
             <div className="flex-row lg:flex-row w-[90%] mx-auto grid grid-cols-12">
                 <div className="aboutus-main xl:col-span-7 col-span-12">
                     <span className="flex justify-center text-[40px] font-semibold font-gruppo uppercase text-white/80 pt-20">About us</span>
-                    <p className='items-center justify-center font-ubuntuL w-full mx-auto text-white/70 mt-[40px] xl:pr-[30px] text-[20px] xl:text-[30px] pl-[30px] xl:pl-[0] xl:border-r xl:border-white/70'>At Carcarelt, we believe in the transformative power of precision detailing. Established with a passion for enhancing the beauty and longevity of vehicles, we have become a trusted name in the world of car care. Our commitment goes beyond the surface – it's about delivering an unparalleled experience to every vehicle that graces our studio.</p>
+                    <p className='items-center justify-center font-ubuntuL w-full mx-auto text-white/70 mt-[40px] xl:pr-[30px] text-[20px] xl:text-[30px] pl-[30px] xl:pl-[0] xl:border-r xl:border-white/70'>At Carcarelt, we believe in the transformative power of precision detailing. Established with a passion for enhancing the beauty and longevity of vehicles, we have become a trusted name in the world of car care. Our commitment goes beyond the surface – it&apos;s about delivering an unparalleled experience to every vehicle that graces our studio.</p>
                 </div>
                 <div className="aboutus-ourvalues xl:pl-[30px] xl:col-span-5 col-span-12 xl:pb-[50px]">
                     <span className="flex justify-center text-[40px] font-semibold font-gruppo uppercase text-white/80 pt-20 xl:pb-[30px]">Our Values</span>
