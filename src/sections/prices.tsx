@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { lists, plans, prices } from '@/constants';
-import { checkMark, crossSign } from "@/components/svg.tsx";
+import { checkMark, crossSign } from "@/components/svg";
 
 function Prices() {
     const [selectedItem, setSelectedItem] = useState<number | null>(null);
